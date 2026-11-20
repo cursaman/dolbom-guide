@@ -1,4 +1,10 @@
 :root{color-scheme:light;--ink:#173b32;--muted:#435c54;--paper:#f5f7f1;--line:#d7e0d6;--accent:#245746}
+.steps{padding-inline-start:1.5rem}
+.steps li{padding-inline-start:.2rem}
+.steps p{margin:.15rem 0 .85rem;color:var(--muted)}
+.workflow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.35rem 2.5rem}
+.workflow li{margin-top:0}
+@media(max-width:720px){.workflow{grid-template-columns:1fr}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.75 "Malgun Gothic","Apple SD Gothic Neo",sans-serif}
