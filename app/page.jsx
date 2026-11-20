@@ -3,7 +3,7 @@ import Checklist from "./checklist";
 export default function Page() {
   return (
     <>
-<header><nav className="wrap" aria-label="주 메뉴"><a href="#"><strong>돌봄 준비 안내서</strong></a><div><a href="#center">센터 개설</a><a href="#license">자격증 취득</a><a href="#checklist">체크리스트</a></div></nav></header>
+<header><nav className="wrap" aria-label="주 메뉴"><a href="#"><strong>돌봄 준비 안내서</strong></a><div><a href="#center">센터 개설</a><a href="#license">자격증 취득</a><a href="#videos">추천 영상</a><a href="#checklist">체크리스트</a></div></nav></header>
 <main>
 <section className="hero wrap">
 <h1>방문요양센터 개설과<br /><span>요양보호사 자격 준비</span></h1>
@@ -53,6 +53,24 @@ export default function Page() {
     <li><strong>방문·기록</strong><p>방문 시간과 실제 제공한 서비스를 기록합니다. 결근이나 일정 변경 시 누가 대체 인력을 배정하고 보호자에게 알릴지 정해둡니다.</p></li>
     <li><strong>점검·청구</strong><p>급여제공계획, 실제 제공기록, 청구 내역을 대조하고 상태 변화나 보호자 요청을 다음 계획에 반영합니다.</p></li>
   </ol>
+</section>
+<section className="panel check" id="videos">
+  <h2>추천 유튜브 영상</h2>
+  <p>조회수 10만 회 이상인 요양보호사 실무와 노인장기요양보험 영상입니다. 표시된 조회수는 검색으로 확인한 시점 기준입니다.</p>
+  <ul className="steps">
+    <li>
+      <strong><a href="https://www.youtube.com/watch?v=dRGPlFTNMxQ">요양보호사는 어떤 일을 할까요?</a></strong>
+      <p>보노랜드_시니어스토리 · 약 73만 회 · 현직 요양보호사의 하루와 실제 업무를 보여주는 인터뷰</p>
+    </li>
+    <li>
+      <strong><a href="https://www.youtube.com/watch?v=s79lij0SBiU">오! 나라가 인정하는 노인장기요양보험</a></strong>
+      <p>국민건강보험공단 · 약 153만 회 · 노인장기요양보험 제도를 소개하는 공익 영상</p>
+    </li>
+    <li>
+      <strong><a href="https://www.youtube.com/watch?v=PIvS6SChcyk">아줌마 NO! 요양보호사!</a></strong>
+      <p>국민건강보험공단 · 약 488만 회 · 요양보호사의 전문성과 역할을 알리는 캠페인</p>
+    </li>
+  </ul>
 </section>
 <Checklist />
 </div>
