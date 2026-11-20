@@ -13,32 +13,34 @@ export default function VideoGuide() {
   const video = videos[selected];
 
   return (
-    <section className="hero wrap video-hero" id="videos" aria-labelledby="video-heading">
-      <h1 id="video-heading">영상으로 보는 <span>요양과 돌봄</span></h1>
-      <div className="video-layout">
-        <div>
-          <iframe
-            className="video-player"
-            title={video.title}
-            src={`https://www.youtube-nocookie.com/embed/${video.id}?playsinline=1`}
-            allow="encrypted-media; picture-in-picture"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          />
-          <a className="video-link" href={`https://www.youtube.com/watch?v=${video.id}`}>YouTube에서 보기</a>
-        </div>
-        <div>
-          <h2>추천 영상</h2>
-          <ul className="video-list">
-            {videos.map((item, index) => (
-              <li key={item.id}>
-                <button type="button" aria-pressed={selected === index} onClick={() => setSelected(index)}>
-                  <strong>{item.title}</strong>
-                  <span>{item.channel} · {item.views}</span>
-                </button>
-              </li>
-            ))}
-          </ul>
+    <section className="video-hero" id="videos" aria-labelledby="video-heading">
+      <div className="wrap">
+        <h1 id="video-heading">영상으로 보는 <span>요양과 돌봄</span></h1>
+        <div className="video-layout">
+          <div>
+            <iframe
+              className="video-player"
+              title={video.title}
+              src={`https://www.youtube-nocookie.com/embed/${video.id}?playsinline=1`}
+              allow="encrypted-media; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+            <a className="video-link" href={`https://www.youtube.com/watch?v=${video.id}`}>YouTube에서 보기</a>
+          </div>
+          <div className="video-queue">
+            <h2>추천 영상</h2>
+            <ul className="video-list">
+              {videos.map((item, index) => (
+                <li key={item.id}>
+                  <button type="button" aria-pressed={selected === index} onClick={() => setSelected(index)}>
+                    <strong>{item.title}</strong>
+                    <span>{item.channel} · {item.views}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>

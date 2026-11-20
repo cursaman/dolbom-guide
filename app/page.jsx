@@ -75,7 +75,7 @@ export default function Page() {
 <Checklist />
 </div>
 </main>
-<footer className="wrap">방문요양 기준을 정리했습니다. 방문목욕·방문간호·주야간보호는 서비스별 시설·인력 요건을 확인하세요.</footer>
+<footer><div className="wrap">방문요양 기준을 정리했습니다. 방문목욕·방문간호·주야간보호는 서비스별 시설·인력 요건을 확인하세요.</div></footer>
     </>
   );
 }
